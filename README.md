@@ -15,6 +15,6 @@ is the desired port number for client connection.  The portnumber argument is re
 
 - This server is capable of returning "healthcheck" data to the client.  To perform a health check as a client, simply make a requests of the form "GET /healthcheck".  For example, one could use the curl command in the following way (if one wanted to test the healthcheck functionality on the same macine the server was running on):
 
-curl -v localhost:(serverPortNumber)\healthcheck
+  curl -v localhost:(serverPortNumber)\healthcheck
 
-The server will return the healthcheck data as a ratio of the number of requests unsuccecssfully serviced over the number of requests successfully serviced.
+  The server will return the healthcheck data as a ratio of the number of requests unsuccecssfully serviced over the number of requests successfully serviced.
