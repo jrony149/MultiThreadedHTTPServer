@@ -43,8 +43,7 @@ TO RUN IN DOCKER CONTAINER:
   To run container:    
   $ ./runserver.sh <port_number_you_want_mapped_to_container> <name_of_logging_file> <number_of_threads_you_want_server_generate>    
   
-  Once you are done using the multi-threaded HTTP server, to stop the container "mts", remove the container "mts", and to remove the network "serverNet", simply open a second     terminal / command prompt and navigate to the local repository.  Run the "stop_remove.sh" file.  This file will stop the container "mts", remove the container "mts", and   
-  remove the network "serverNet".    
+  Once you are done using the multi-threaded HTTP server, to stop the container "mts", remove the container "mts", and to remove the network "serverNet", simply open a second     terminal / command prompt and navigate to the local repository.  Run the "stop_remove.sh" file.  This file will stop the container "mts", remove the container "mts", and         remove the network "serverNet".    
   
   
  
