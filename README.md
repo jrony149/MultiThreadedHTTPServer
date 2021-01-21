@@ -24,8 +24,10 @@ is the desired port number for client connection.  The portnumber argument is re
   
 This is a multi-threaded HTTP server written in the C programming language.
 This server includes a number of features that can be activated using command line arguments - these features are:  
+  
 1). Full logging of request data.  This server will fully log all files it handles (whether via write request or read request) including the full content of the file
-in Hexadecimal (0x).
+in Hexadecimal (0x).  
+  
 2). The number of threads the server uses to carry out servicing of requests.  The user can set the number of "worker threads" the server uses.
 I have included the necessary files for containerization of this server using Docker.
 TO RUN IN DOCKER CONTAINER:
