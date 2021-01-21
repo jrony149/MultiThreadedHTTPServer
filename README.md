@@ -31,7 +31,7 @@ in Hexadecimal (0x).
 2). The number of threads the server uses to carry out servicing of requests.  The user can set the number of "worker threads" the server uses.
 I have included the necessary files for containerization of this server using Docker.  
   
-TO RUN IN DOCKER CONTAINER:
+TO RUN IN DOCKER CONTAINER:  
   Clone the repository.  
   First run the "buld_image.sh" file.  This file will create the Docker subnet "serverNet" as well as build the Docker image "mts" on your local machine.  
   Then you must run the "runserver.sh" file.  This file will take three command line arguments.  The first command line argument must be the port on which you want the docker     container to listen on your local machine.  The second command line argument must be the name of the logging file for the logging feature. And the third command line argument   must be the number of threads you want the server to utilize.  Experiment with this number and try to discover an optimal number of threads!    
