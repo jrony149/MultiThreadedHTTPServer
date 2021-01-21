@@ -18,3 +18,19 @@ is the desired port number for client connection.  The portnumber argument is re
   curl -v localhost:(serverPortNumber)\healthcheck
 
   The server will return the healthcheck data as a ratio of the number of requests unsuccecssfully serviced over the number of requests successfully serviced.
+ 
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+This is a multi-threaded HTTP server written in the C programming language.
+This server includes a number of features that can be activated using command line arguments - these features are:  
+1). Full logging of request data.  This server will fully log all files it handles (whether via write request or read request) including the full content of the file
+in Hexadecimal (0x).
+2). The number of threads the server uses to carry out servicing of requests.  The user can set the number of "worker threads" the server uses.
+I have included the necessary files for containerization of this server using Docker.
+TO RUN IN DOCKER CONTAINER:
+  First run the "buld_image.sh" file.  This file will create the Docker subnet "serverNet" as well as build the Docker image "mts" on your local machine.
+  Then you must run the "runserver.sh" file.  This file will take three command line arguments.  The first command line argument must be the port on which you want the docker     container to listen on your local machine.  The second command line argument must be the name of the logging file for the logging feature. And the third command line argument   must be the number of threads you want the server to utilize.  Experiment with this number and try to discover an optimal number of threads! 
+ 
+ 
+  
