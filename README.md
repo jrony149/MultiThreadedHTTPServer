@@ -29,7 +29,8 @@ This server includes a number of features that can be activated using command li
 in Hexadecimal (0x).  
   
 2). The number of threads the server uses to carry out servicing of requests.  The user can set the number of "worker threads" the server uses.
-I have included the necessary files for containerization of this server using Docker.
+I have included the necessary files for containerization of this server using Docker.  
+  
 TO RUN IN DOCKER CONTAINER:
   Clone the repository.
   First run the "buld_image.sh" file.  This file will create the Docker subnet "serverNet" as well as build the Docker image "mts" on your local machine.
