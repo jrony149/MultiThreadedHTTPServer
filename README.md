@@ -23,7 +23,7 @@ TO RUN IN DOCKER CONTAINER:
   
   Once you are done using the multi-threaded HTTP server, to stop the container "mts", remove the container "mts", and to remove the network "serverNet", simply open a second     terminal / command prompt and navigate to the local repository.  Run the "stop_remove.sh" file.  This file will stop the container "mts", remove the container "mts", and         remove the network "serverNet".  
   
-  This server also has a health check functionality.  Example:  sending a curl request of the type "curl -v <server_address>/healthcheck" will return the number of successfully   services requests over the number of unsuccessfully services requests.  An "unsuccessfully serviced request" is any request that results in no data being returned.               HTTP status codes returns in the 400's and 500's constitute "unsuccessfully serviced requests".
+  This server also has a health check functionality.  Example:  sending a curl request of the type "curl -v <server_address>/healthcheck" will return the number of successfully   serviced requests over the number of unsuccessfully serviced requests.  An "unsuccessfully serviced request" is any request that results in no data being returned.               HTTP status code returns in the 400's and 500's constitute "unsuccessfully serviced requests".
   
   Further Notes:  
     
