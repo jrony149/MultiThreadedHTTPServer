@@ -34,7 +34,7 @@ TO RUN IN DOCKER CONTAINER:
    I am currently unsure as to why this is happening, but I am working on fixing it.  All other server functionality within the container is working as expected, however.
    
  Feel free to use the "docker exec -it /bin/bash" command from a separate terminal in order to open a terminal within the docker container to observe the logging file.  
- One last note: because this was an academic project, some strange restrictions were placed on the code, and files requested in any capacity (whether read or write) can consist                 of only the following characters: <a-z, A-Z, 0-9, -, and \_>. Also the files names cannnot be longer than 27 characters.  
+ One last note: because this was an academic project, some strange restrictions were placed on the code, and files requested in any capacity (whether read or write) can consist                 of only the following characters: <a-z, A-Z, 0-9, -, and \_>. Also the file names cannnot be longer than 27 characters.  
  Example of a good file name:      
  FiLeNaMe\_-  
  Example of a bad file name:    
