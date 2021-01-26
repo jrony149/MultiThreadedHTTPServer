@@ -11,7 +11,7 @@ I have included the necessary files for containerization of this server using Do
   
 TO RUN IN DOCKER CONTAINER:  
   Clone the repository.  
-  First run the "buld_image.sh" file.  This file will create the Docker subnet "serverNet" as well as build the Docker image "mts" on your local machine.  
+  First run the "build_image.sh" file.  This file will create the Docker subnet "serverNet" as well as build the Docker image "mts" on your local machine.  
   Then you must run the "runserver.sh" file.  This file will take three command line arguments.  The first command line argument must be the port on which you want the docker     container to listen on your local machine.  The second command line argument must be the name of the logging file for the logging feature. And the third command line argument   must be the number of threads you want the server to utilize.  Experiment with this number and try to discover an optimal number of threads!    
     
   Example:    
@@ -23,7 +23,7 @@ TO RUN IN DOCKER CONTAINER:
   
   Once you are done using the multi-threaded HTTP server, to stop the container "mts", remove the container "mts", and to remove the network "serverNet", simply open a             terminal and navigate to the local repository.  Run the "stop_remove.sh" file.  This file will stop the container "mts", remove the container "mts", and         remove the       network "serverNet".  
   
-  This server also has a health check functionality.  Example:  sending a curl request of the type "curl -v <server_address>/healthcheck" will return the number of successfully   serviced requests over the number of unsuccessfully serviced requests.  An "unsuccessfully serviced request" is any request that results in no data being returned.               HTTP status code returns in the 400's and 500's constitute "unsuccessfully serviced requests".
+  This server also has a health check functionality.  Example:  sending a curl request of the type "curl -v <server_address>/healthcheck" will return the total number of requests serviced over the number of unsuccessfully serviced requests.  An "unsuccessfully serviced request" is any request that results in no data being returned.               HTTP status code returns in the 400's and 500's constitute "unsuccessfully serviced requests".
   
   Further Notes:  
     
